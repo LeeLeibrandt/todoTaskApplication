@@ -1,0 +1,20 @@
+body{
+    background-color:  #202430;
+    color: rgb(201, 201, 201);
+}
+
+.fc-content{
+    background-color: #49c4c4;
+    color: black;
+    font-size: 17px;
+}
+
+.fc td.fc-today {
+    background-color: rgb(201, 201, 201);
+    color: black;
+}
+
+footer{
+    text-align: center;
+    font-size: 10px;
+}

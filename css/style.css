@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(43, 43, 43);
+    color: rgb(214, 214, 214);
+}
+.bg{
+    background-color: rgb(43, 43, 43);  
+}
+.container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page-header{
+    border-bottom: none;
+}
+
+.img img{
+    padding-top: 3rem;
+    width: 80%;
+}
+.btn{
+    margin: 1rem;
+}
+.box{
+    margin: .5rem;
+    background-color: rgb(193, 144, 240);
+    color: black;
+}
+.box:hover{
+    color: white;
+}
+.outline{
+    color: white;
+    border: 1.5px solid rgb(193, 144, 240);
+}
+.outline:hover{
+    color: rgb(193, 144, 240);
+    border: 1.5px solid rgb(43, 43, 43);
+}
+
+.end{
+    position: fixed;;
+    bottom:0;
+    width:100%;
+}

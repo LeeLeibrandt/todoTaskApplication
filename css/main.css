@@ -1,0 +1,55 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(247, 247, 247);
+}
+.content{
+    margin-left: 1rem;
+}
+.jumbotron{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+}
+.my-4{
+    width: 30%;
+    left: 0;
+    margin: 0;
+    background-color: rgb(193, 144, 240);
+}
+.btn{
+    margin: 1rem;
+    width: 150px;
+}
+.btn-start{
+    margin: .5rem;
+    background-color: rgb(193, 144, 240);
+    color: black;
+}
+.btn-start:hover{
+    color: white;
+}
+.btn-end{
+    color: black;
+    border: 1.5px solid rgb(247, 247, 247);
+    border-bottom: 2px solid rgb(193, 144, 240);
+}
+.btn-end:hover{
+    color: rgb(193, 144, 240);
+    border: 1.5px solid rgb(193, 144, 240);
+}
+.img img{
+    width: 500px;
+}
+.wrapper{
+    width: 80%;
+}
+.input{
+    max-width: 500px;
+}
+.end{
+    position: fixed;;
+    bottom:0;
+    width:100%;
+}
