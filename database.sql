@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: May 26, 2020 at 08:43 PM
+-- Generation Time: Jun 08, 2020 at 01:08 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.4.2
 
@@ -27,25 +27,32 @@ CREATE TABLE `events` (
   `end_event` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `events`
+--
+
+INSERT INTO `events` (`id`, `title`, `start_event`, `end_event`) VALUES
+(1, '', '2020-05-05 00:00:00', '2020-05-30 00:00:00');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `todo_list`
+-- Table structure for table `Tasks`
 --
 
-CREATE TABLE `todo_list` (
-  `id` int(11) NOT NULL COMMENT 'Primary Key',
-  `task` mediumtext NOT NULL,
-  `status` int(1) DEFAULT '0' COMMENT '0=Active, 1=Done, 3=Delete ',
-  `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+CREATE TABLE `Tasks` (
+  `id` int(11) NOT NULL,
+  `task` varchar(255) NOT NULL,
+  `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `duedate` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `todo_list`
+-- Dumping data for table `Tasks`
 --
 
-INSERT INTO `todo_list` (`id`, `task`, `status`, `created`) VALUES
-(3, 'Hello World!', 1, '2020-05-14 19:28:12');
+INSERT INTO `Tasks` (`id`, `task`, `created`, `duedate`) VALUES
+(1, 'Hello World!', '2020-06-07 21:41:16', '04-24-2020'),;
 
 -- --------------------------------------------------------
 
@@ -78,9 +85,9 @@ ALTER TABLE `events`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `todo_list`
+-- Indexes for table `Tasks`
 --
-ALTER TABLE `todo_list`
+ALTER TABLE `Tasks`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -98,13 +105,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `events`
 --
 ALTER TABLE `events`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `todo_list`
+-- AUTO_INCREMENT for table `Tasks`
 --
-ALTER TABLE `todo_list`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key', AUTO_INCREMENT=5;
+ALTER TABLE `Tasks`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `users`
